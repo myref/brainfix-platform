@@ -16,8 +16,6 @@ The data is sent in JSON format. The following fields should at least be in ther
 device (uuid),
 setup (uuid),
 user (uuid),
-gender (m/f/x),
-age (int),
 game (uuid),
 data []  
 }
