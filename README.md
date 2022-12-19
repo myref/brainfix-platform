@@ -7,6 +7,8 @@ The platform is based upon ESP32, as it has wifi on-board and can be expanded us
 
 The idea is to create a platform that generates useable measurements that cannot be traced to a person, but does allow for progress tracking and scientific analysis. In order to do so, each build using the platform is equipped with an RC522 rfid reader, so that the user can easiy identify him/herself by holding a rfid tag over the sensor. This way the user only has to provide data once.
 
+The setup must not be technical or more complicated than enabling a smart lightbulb. So on first setup it uses [wifimanager](https://github.com/tzapu/WiFiManager) to create an openingpage to connect the system to the local wifi network. Once that is done, the system should present a simple web page to select the game and if needed alter parameters.
+
 ## Data generation
 In order to measure progress and prevent the need for complicated hardware to store performances, the data must be pushed to a cloud server. In order to prevent that the data can be traced back to a person, personal identifying data is not stored. 
 
