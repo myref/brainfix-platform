@@ -9,6 +9,8 @@ The idea is to create a platform that generates useable measurements that cannot
 
 The setup must not be technical or more complicated than enabling a smart lightbulb. So on first setup it uses [wifimanager](https://github.com/tzapu/WiFiManager) to create an openingpage to connect the system to the local wifi network. Once that is done, the system should present a simple web page to select the game and if needed alter parameters.
 
+In order to prevent the user to type in an IP address, we can use mDNS as explained [here](https://techtutorialsx.com/2020/04/17/esp32-mdns-address-resolution/)
+
 ## Data generation
 In order to measure progress and prevent the need for complicated hardware to store performances, the data must be pushed to a cloud server. In order to prevent that the data can be traced back to a person, personal identifying data is not stored. 
 
