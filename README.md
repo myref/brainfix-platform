@@ -17,7 +17,7 @@ In order to measure progress and prevent the need for complicated hardware to st
 The data is sent in JSON format. The following fields should at least be in there:
 ```
 {
-  "$schema": "https://brainfix.somedomain.org/schemas/brainfix_main/v1/main.json#"
+  "$schema": "https://brainfix.somedomain.org/schemas/brainfix/v1/main.json#"
   "device": "<uuid>",
   "setup":  "<uuid>",
   "user":   "<uuid>",
