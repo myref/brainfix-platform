@@ -17,11 +17,15 @@ In order to measure progress and prevent the need for complicated hardware to st
 The data is sent in JSON format. The following fields should at least be in there:
 ```
 {
-device (uuid),
-setup (uuid),
-user (uuid),
-game (uuid),
-data []  
+  "device": "<uuid>",
+  "setup":  "<uuid>",
+  "user":   "<uuid>",
+  "setup":  "<uuid>",
+  "data":   {
+    "game":             "<uuid>",
+    "duration":         <seconds, int>, //Duration of the game
+    "game_data":        {}
+  }, 
 }
 ```
 The device UUID must be entered in the code in order to identify on which device the measurement is taken. This allows to easily filter on device in case a device seems to provide inaccurate data. The default UUID c6214a0d-007a-4c7d-ba50-c37e2d95ba42 is entered in the code on github and filtered out on ingress to prevent people from using the default code and pollute the data. A unique UUID can be generated for example on [uuidgenerator](https://www.uuidgenerator.net/).
