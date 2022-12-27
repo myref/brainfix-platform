@@ -11,6 +11,8 @@ The setup must not be technical or more complicated than enabling a smart lightb
 
 In order to prevent the user to type in an IP address, we can use mDNS as explained [here](https://techtutorialsx.com/2020/04/17/esp32-mdns-address-resolution/). However, this also entails that we need to change the name of the system after installation to allow for multiple installations to be used on the same network.
 
+It looks like the ESP32-FSwebserver has allof this on board. All files for the webpage can be uploaded to the ESP.
+
 ## Data generation
 In order to measure progress and prevent the need for complicated hardware to store performances, the data must be pushed to a cloud server. In order to prevent that the data can be traced back to a person, personal identifying data is not stored. 
 
